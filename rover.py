@@ -18,6 +18,9 @@ def rove(
             elif current_direction == "E":
                 current_direction = "N"
 
+            elif current_direction == "W":
+                current_direction = "S"
+
         current_coordinate = move(current_coordinate, current_direction, command)
 
     return current_coordinate

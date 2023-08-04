@@ -36,3 +36,4 @@ def test_turning_left():
     assert rove((2, 2), "N", "lf") == (1, 2)
     assert rove((2, 2), "E", "lf") == (2, 1)
     assert rove((2, 2), "S", "lf") == (3, 2)
+    assert rove((2, 2), "W", "lf") == (2, 3)
