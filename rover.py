@@ -7,4 +7,7 @@ def rove(
     if commands == "f":
         return (2, 1)
 
+    if commands == "b":
+        return (2, 3)
+
     return coordinate
