@@ -49,3 +49,7 @@ def test_turning_with_no_movement_returns_initial_coordinates():
 
 def test_returns_x_decremented_by_one_when_turning_left_and_going_forwards():
     assert rove((2, 2), "N", "lf") == (1, 2)
+
+
+def test_returns_x_decremented_by_one_when_turning_left_and_going_forwards_():
+    assert rove((2, 2), "E", "lf") == (2, 1)

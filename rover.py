@@ -9,7 +9,11 @@ def rove(
 
     for command in commands:
         if command == "l":
-            current_direction = "W"
+            if current_direction == "N":
+                current_direction = "W"
+
+            if current_direction == "E":
+                current_direction = "N"
 
         current_coordinate = move(current_coordinate, current_direction, command)
 
