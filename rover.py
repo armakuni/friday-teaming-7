@@ -5,9 +5,10 @@ def rove(
     coordinate: Tuple[int, int], initial_direction: str, commands: str
 ) -> Tuple[int, int]:
     current_coordinate = coordinate
+    current_direction = initial_direction
 
     for command in commands:
-        current_coordinate = move(current_coordinate, initial_direction, command)
+        current_coordinate = move(current_coordinate, current_direction, command)
 
     return current_coordinate
 
