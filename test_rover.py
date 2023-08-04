@@ -2,4 +2,4 @@ from rover import *
 
 
 def test_can_call_empty_function():
-    assert rove("") is None
+    assert rove((1, 1), "N", "") == (1, 1)
