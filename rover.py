@@ -8,6 +8,9 @@ def rove(
     current_direction = initial_direction
 
     for command in commands:
+        if command == "l":
+            current_direction = "W"
+
         current_coordinate = move(current_coordinate, current_direction, command)
 
     return current_coordinate
