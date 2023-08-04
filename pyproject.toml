@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "friday-teaming-7"
+version = "0.1.0"
+description = ""
+authors = ["Ben Nagy <nagy.benb@gmail.com>"]
+readme = "README.md"
+packages = [{include = "friday_teaming_7"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
