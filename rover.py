@@ -4,6 +4,12 @@ from typing import Tuple
 def rove(
     coordinate: Tuple[int, int], initial_direction: str, commands: str
 ) -> Tuple[int, int]:
+    return move(coordinate, initial_direction, commands)
+
+
+def move(
+    coordinate: Tuple[int, int], initial_direction: str, commands: str
+) -> Tuple[int, int]:
     x_change = 0
     y_change = 0
 
