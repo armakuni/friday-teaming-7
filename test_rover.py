@@ -18,7 +18,7 @@ def test_no_movement():
     assert rove((2, 2), "N", "") == (2, 2)
 
 
-def test_forwards():
+def test_moving_forwards():
     assert rove((2, 2), "N", "f") == (2, 1)
     assert rove((2, 2), "W", "f") == (1, 2)
     assert rove((2, 2), "E", "f") == (3, 2)
@@ -26,7 +26,7 @@ def test_forwards():
     assert rove((2, 2), "S", "ff") == (2, 4)
 
 
-def test_backwards():
+def test_moving_backwards():
     assert rove((2, 2), "N", "b") == (2, 3)
     assert rove((2, 2), "S", "bb") == (2, 0)
 
