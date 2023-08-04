@@ -46,14 +46,6 @@ def move(
 
 
 def turn_left(current_direction: str) -> str:
-    if current_direction == "N":
-        return "W"
+    next_direction = {"N": "W", "S": "E", "E": "N", "W": "S"}
 
-    elif current_direction == "S":
-        return "E"
-
-    elif current_direction == "E":
-        return "N"
-
-    elif current_direction == "W":
-        return "S"
+    return next_direction[current_direction]
