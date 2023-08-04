@@ -18,4 +18,7 @@ def rove(
     if commands == "f":
         return (initial_x + x_change, initial_y + y_change)
 
+    if commands == "b":
+        return (initial_x - x_change, initial_y - y_change)
+
     return coordinate

@@ -22,6 +22,10 @@ def test_returns_y_incremented_by_one_given_this_coordinate():
     assert rove((2, 2), "N", "f") == (2, 1)
 
 
+def test_returns_y_decremented_by_one_given_this_coordinate():
+    assert rove((2, 2), "N", "b") == (2, 3)
+
+
 def test_returns_y_incremented_by_one_given_this_coordinate_xxxxxxxx():
     assert rove((2, 2), "W", "f") == (1, 2)
 
