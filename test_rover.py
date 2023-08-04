@@ -34,5 +34,9 @@ def test_returns_x_incremented_by_one_given_facing_east_with_this_coordinate_xxx
     assert rove((2, 2), "E", "f") == (3, 2)
 
 
+def test_returns_y_incremented_by_one_given_facing_south_with_this_coordinate_xxxxxxxx():
+    assert rove((2, 2), "S", "f") == (2, 3)
+
+
 # def test_returns_x_decremented_by_one_when_turning_left_and_going_forwards():
 #    assert rove((2, 2), "N", "lf") == (1, 2)
