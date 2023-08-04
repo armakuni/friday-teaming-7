@@ -15,6 +15,9 @@ def rove(
     if initial_direction == "W":
         x_change -= 1
 
+    if initial_direction == "E":
+        x_change += 1
+
     if commands == "f":
         return (initial_x + x_change, initial_y + y_change)
 
