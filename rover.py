@@ -14,7 +14,7 @@ def rove(
 
 
 def move(
-    coordinate: Tuple[int, int], initial_direction: str, commands: str
+    coordinate: Tuple[int, int], initial_direction: str, command: str
 ) -> Tuple[int, int]:
     x_change = 0
     y_change = 0
@@ -33,10 +33,10 @@ def move(
     if initial_direction == "S":
         y_change += 1
 
-    if commands == "f":
+    if command == "f":
         return (initial_x + x_change, initial_y + y_change)
 
-    if commands == "b":
+    if command == "b":
         return (initial_x - x_change, initial_y - y_change)
 
     return coordinate
