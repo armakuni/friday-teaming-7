@@ -53,3 +53,17 @@ def move(
         return (initial_x - x_change, initial_y - y_change)
 
     return coordinate
+
+
+def turn_left(current_direction: str) -> str:
+    if current_direction == "N":
+        return "W"
+
+    elif current_direction == "S":
+        return "E"
+
+    elif current_direction == "E":
+        return "N"
+
+    elif current_direction == "W":
+        return "S"
