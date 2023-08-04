@@ -53,3 +53,7 @@ def test_returns_x_decremented_by_one_when_turning_left_and_going_forwards():
 
 def test_returns_x_decremented_by_one_when_turning_left_and_going_forwards_():
     assert rove((2, 2), "E", "lf") == (2, 1)
+
+
+def test_turning_left_when_asdfasdf():
+    assert rove((2, 2), "S", "lf") == (3, 2)

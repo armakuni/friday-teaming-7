@@ -12,7 +12,10 @@ def rove(
             if current_direction == "N":
                 current_direction = "W"
 
-            if current_direction == "E":
+            elif current_direction == "S":
+                current_direction = "E"
+
+            elif current_direction == "E":
                 current_direction = "N"
 
         current_coordinate = move(current_coordinate, current_direction, command)
